@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="logo.png" type="image/x-icon" alt = "Logo feito por logomakr.com">
+    <link rel="stylesheet" href="css/style.css">
+    <title>calculadora</title>
+</head>
+
+<body>
+<!---->
+<form action="" name="calc">
+    <div id="calculadora">
+
+        <input type="text" id="visor" name="visor" class="visor">
+        <div id="primeira">
+            <input type="button" value="7" class="botao borda" onclick="botao(value)">
+            <input type="button" value="8" class="botao borda" onclick="botao(value)">
+            <input type="button" value="9" class="botao borda" onclick="botao(value)">
+            <input type="button" value="/" class="botao borda" onclick="botao(value)">
+        </div>
+        <div id="segunda">
+            <input type="button" value="4" class="botao borda" onclick="botao(value)">
+            <input type="button" value="5" class="botao borda" onclick="botao(value)">
+            <input type="button" value="6" class="botao borda" onclick="botao(value)">
+            <input type="button" value="*" class="botao borda" onclick="botao(value)">
+        </div>
+        <div id="terceira">
+            <input type="button" value="1" class="botao borda" onclick="botao(value)">
+            <input type="button" value="2" class="botao borda" onclick="botao(value)">
+            <input type="button" value="3" class="botao borda" onclick="botao(value)">
+            <input type="button" value="-" class="botao borda" onclick="botao(value)">
+        </div>
+        <div id="quarta">
+            <input type="button" value="C" class="botao borda reset" onclick="reseta()">
+            <input type="button" value="0" class="botao borda" onclick="botao(value)">
+            <input type="button" value="=" class="botao borda igual" onclick="calcula()">
+            <input type="button" value="+" class="botao borda" onclick="botao(value)">
+        </div>
+    </div>
+</form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

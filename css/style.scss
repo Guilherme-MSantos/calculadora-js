@@ -1,0 +1,36 @@
+//*Variavéis  de cor 
+$primary-color: #583d72;
+$secundary-color:#9f5f80;
+$terciary-color:#ffba93;
+$alert:#ff8e71;
+//*fim 
+*{padding:0px ; margin:0px ;box-sizing: border-box;}
+body{background-color: $primary-color;}
+form{margin-top:25px;display:flex;flex-direction:column;justify-items:center;align-items: center;width:100%;flex-wrap: nowrap;}
+.visor{width: 430px;height:90px;font-size: 36px;margin:0 10px}
+.botao {background-color:$terciary-color; width: 90px;height: 90px;border-radius: 30%;margin:10px;font-size: 36px;border: none;padding:0;}
+.reset {background-color: $alert;}
+.igual{background-color:$secundary-color;}
+
+//* Hover
+.botao:hover{background-color:$primary-color;}
+
+//* Responsividade 
+@media screen and (max-width:500px){
+    form{width:100%}
+    #calculadora{display:flex;flex-direction:column;justify-items:center;align-items: center;}
+    .visor{width:100%;margin:10px 0px}
+    .botao{width:90px; height:90px;margin:10px}
+  
+}
+@media screen and (max-width:453px){
+    .visor{width:300px;height: 50px;margin:10px 0px}
+    .botao{width:50px; height:50px;margin:10px}
+}
+@media screen and (max-width:360px){
+    form{width:100%;}
+    #calculadora{display:flex;flex-direction:column;justify-items:center;align-items: center;}
+    .visor{width:87%;margin:10px 0px}
+    .botao{width:60px; height:60px;margin:5px}
+   
+}
